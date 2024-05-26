@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .nested-table {
+            width: 100%;
+            border: none;
+            border-collapse: collapse;
+        }
+
+        .nested-table th, .nested-table td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .small-width {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 400px;">
+        <table border="2px">
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th colspan="3">Period</th>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Item</th>
+                <td colspan="2">
+                    <table class="nested-table">
+                        <tr>
+                            <th colspan="2">Shopping Details</th>
+                        </tr>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Cost</th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>MONDAY</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td colspan="2">10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>5:00 PM</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Bag</td>
+                        </tr>
+                        <tr>
+                            <td>T-Shirt</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                        </tr>
+                        <tr>
+                            <td>T-shirt</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                        </tr>
+                        <tr>
+                            <td>Bag</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="small-width">
+                    <table class="nested-table">
+                        <tr>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="small-width">
+                    <table class="nested-table">
+                        <tr>
+                            <td>2000.00</td>
+                        </tr>
+                        <tr>
+                            <td>1300.00</td>
+                        </tr>
+                        <tr>
+                            <td>800.00</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MONDAY</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td>12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td>Bag</td>
+                        </tr>
+                        <tr>
+                            <td>T-Shirt</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                        </tr>
+                        <tr>
+                            <td>T-shirt</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="small-width">
+                    <table class="nested-table">
+                        <tr>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="small-width">
+                    <table class="nested-table">
+                        <tr>
+                            <td>2100.00</td>
+                        </tr>
+                        <tr>
+                            <td>600.00</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
